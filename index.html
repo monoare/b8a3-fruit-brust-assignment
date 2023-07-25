@@ -13,11 +13,629 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Font -->
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Customize CSS styles -->
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <!-- Navbar Section -->
+      <nav class="container mx-auto">
+        <div
+          class="navbar bg-[#F85559] rounded-s-full rounded-e-full my-12 px-12 py-9 h-36 text-white"
+        >
+          <div class="navbar-start">
+            <ul class="menu menu-horizontal px-1 text-lg">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <img src="images/logo.png" alt="" />
+            <a class="btn btn-ghost normal-case text-5xl font-bold ml-2 h-16"
+              >Fruit Burst</a
+            >
+          </div>
+          <div class="navbar-end">
+            <div class="flex items-center">
+              <input
+                type="text"
+                placeholder="Search here"
+                class="input w-96 h-14 rounded-s-full rounded-e-full pl-10"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="relative -left-12"
+              >
+                <path
+                  d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z"
+                  stroke="#121212"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="dropdown dropdown-end">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container mx-auto">
+      <!-- Banner Section -->
+      <section>
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <!-- Slide-1 -->
+            <div
+              class="hero min-h-screen"
+              style="background-image: url(images/banner1.png)"
+            >
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-3xl mb-96">
+                  <h1 class="mb-6 text-7xl font-extrabold">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-8 text-xl font-medium">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn h-16 btn-ghost capitalize border-none bg-[#F85559] text-white text-xl px-8 py-5 rounded-lg"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle border-none text-white bg-[#121212]"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle border-none text-white bg-[#121212]"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <!-- Slide-2 -->
+            <div
+              class="hero min-h-screen"
+              style="background-image: url(images/banner2.png)"
+            >
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-3xl mb-96">
+                  <h1 class="mb-6 text-7xl font-extrabold">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-8 text-xl font-medium">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn h-16 btn-ghost capitalize border-none bg-[#F85559] text-white text-xl px-8 py-5 rounded-lg"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle border-none text-white bg-[#121212]"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle border-none text-white bg-[#121212]"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <!-- Slide-3 -->
+            <div
+              class="hero min-h-screen"
+              style="background-image: url(images/banner3.png)"
+            >
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-3xl mb-96">
+                  <h1 class="mb-6 text-7xl font-extrabold">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-8 text-xl font-medium">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn h-16 btn-ghost capitalize border-none bg-[#F85559] text-white text-xl px-8 py-5 rounded-lg"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle border-none text-white bg-[#121212]"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle border-none text-white bg-[#121212]"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <!-- Slide-4 -->
+            <div
+              class="hero min-h-screen"
+              style="background-image: url(images/banner4.png)"
+            >
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-3xl mb-96">
+                  <h1 class="mb-6 text-7xl font-extrabold">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-8 text-xl font-medium">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn h-16 btn-ghost capitalize border-none bg-[#F85559] text-white text-xl px-8 py-5 rounded-lg"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle border-none text-white bg-[#121212]"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle border-none text-white bg-[#121212]"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fruits Section -->
+      <section class="mb-32">
+        <div
+          class="bg-white drop-shadow-lg rounded-lg flex justify-around items-center text-center mx-32 py-9 -mt-28"
+        >
+          <div>
+            <img src="images/fruit1.png" alt="" />
+            <p class="pt-4 text-xl font-medium">Grapes</p>
+          </div>
+          <div>
+            <img src="images/fruit2.png" alt="" />
+            <p class="pt-4 text-xl font-medium">Orange</p>
+          </div>
+          <div>
+            <img src="images/fruit3.png" alt="" />
+            <p class="pt-4 text-xl font-medium">Mango</p>
+          </div>
+          <div>
+            <img src="images/fruit4.png" alt="" />
+            <p class="pt-4 text-xl font-medium">Strawberry</p>
+          </div>
+          <div>
+            <img src="images/fruit5.png" alt="" />
+            <p class="pt-4 text-xl font-medium">Pomegranate</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Deal of the day section -->
+      <section>
+        <div class="flex justify-end mb-12">
+          <div>
+            <h2>Deal of the day</h2>
+            <p>
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <div>
+            <div class="flex gap-5">
+              <div>
+                <span class="countdown font-mono text-4xl">
+                  <span style="--value: 15"></span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                      stroke="#121212"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                days
+              </div>
+              <div>
+                <span class="countdown font-mono text-4xl">
+                  <span style="--value: 10"></span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                      stroke="#121212"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                hours
+              </div>
+              <div>
+                <span class="countdown font-mono text-4xl">
+                  <span style="--value: 24"></span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                      stroke="#121212"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                min
+              </div>
+              <div>
+                <span class="countdown font-mono text-4xl">
+                  <span style="--value: 24"></span>
+                </span>
+                sec
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <!-- First-Fruit -->
+          <div
+            class="flex flex-col justify-center items-center rounded-lg border-2"
+          >
+            <img class="mx-36 mt-12" src="images/fruit6.png" alt="" />
+            <h3 class="text-2xl font-bold mt-12 mb-6">12.90$ - 18.85$</h3>
+            <div class="border-b-2 border-[#1212121a] w-60 mt-2"></div>
+            <p class="text-lg font-medium my-6">Apples</p>
+            <div class="rating rating-lg rating-half">
+              <input type="radio" name="rating-10" class="rating-hidden" />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+            </div>
+            <p class="text-lg text-[#F85559;] font-bold mt-8 mb-10">Details</p>
+          </div>
+          <!-- Second-Fruit -->
+          <div
+            class="flex flex-col justify-center items-center rounded-lg border-2"
+          >
+            <img class="mx-36 mt-12" src="images/fruit7.png" alt="" />
+            <h3 class="text-2xl font-bold mt-12 mb-6">12.90$ - 18.85$</h3>
+            <div class="border-b-2 border-[#1212121a] w-60 mt-2"></div>
+            <p class="text-lg font-medium my-6">Orange</p>
+            <div class="rating rating-lg rating-half">
+              <input type="radio" name="rating-10" class="rating-hidden" />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+            </div>
+            <p class="text-lg text-[#F85559;] font-bold mt-8 mb-10">Details</p>
+          </div>
+          <!-- Third-Fruit -->
+          <div
+            class="flex flex-col justify-center items-center rounded-lg border-2"
+          >
+            <img class="mx-36 mt-12" src="images/fruit8.png" alt="" />
+            <h3 class="text-2xl font-bold mt-12 mb-6">12.90$ - 18.85$</h3>
+            <div class="border-b-2 border-[#1212121a] w-60 mt-2"></div>
+            <p class="text-lg font-medium my-6">Red Dragon</p>
+            <div class="rating rating-lg rating-half">
+              <input type="radio" name="rating-10" class="rating-hidden" />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+            </div>
+            <p class="text-lg text-[#F85559;] font-bold mt-8 mb-10">Details</p>
+          </div>
+          <!-- Fourth-Fruit -->
+          <div
+            class="flex flex-col justify-center items-center rounded-lg border-2"
+          >
+            <img class="mx-36 mt-12" src="images/fruit9.png" alt="" />
+            <h3 class="text-2xl font-bold mt-12 mb-6">12.90$ - 18.85$</h3>
+            <div class="border-b-2 border-[#1212121a] w-60 mt-2"></div>
+            <p class="text-lg font-medium my-6">Details</p>
+            <div class="rating rating-lg rating-half">
+              <input type="radio" name="rating-10" class="rating-hidden" />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-1"
+              />
+              <input
+                type="radio"
+                name="rating-10"
+                class="bg-[#F85559] mask mask-star-2 mask-half-2"
+              />
+            </div>
+            <p class="text-lg text-[#F85559;] font-bold mt-8 mb-10">Details</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
