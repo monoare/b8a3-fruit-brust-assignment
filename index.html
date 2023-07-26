@@ -139,8 +139,8 @@
     <main class="container mx-auto">
       <!-- Banner Section -->
       <section>
-        <div class="carousel px-3 w-72 lg:w-full">
-          <div id="slide1" class="carousel-item relative lg:w-full">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
             <!-- Slide-1 -->
             <div
               class="hero lg:min-h-screen"
@@ -149,14 +149,14 @@
               <div class="hero-overlay bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-3xl">
-                  <h1 class="lg:mb-6 text-2xl lg:text-7xl w-60 font-extrabold">
+                  <h1 class="lg:mb-6 text-lg lg:text-7xl w-60 font-extrabold">
                     Exotic tastes at your doorstep
                   </h1>
-                  <p class="mb-8 text-xs lg:text-xl font-medium">
+                  <p class="mb-8 text-[8px] lg:text-xl font-medium">
                     We supply highly quality organic products
                   </p>
                   <button
-                    class="btn lg:h-16 btn-ghost capitalize border-none bg-[#F85559] text-white text-xs lg:text-xl lg:px-8 lg:py-5 rounded-lg"
+                    class="btn btn-sm lg:btn-ghost capitalize border-none bg-[#F85559] text-white text-xs lg:text-xl px-2 lg:px-8 py-2 lg:py-5 rounded-lg"
                   >
                     Shop Now
                   </button>
@@ -164,21 +164,21 @@
               </div>
             </div>
             <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              class="absolute flex justify-between transform -translate-y-1/2 left-2 lg:left-5 right-2 lg:right-5 top-1/2"
             >
               <a
                 href="#slide4"
-                class="btn btn-circle w-3 lg:w-12 h-3 lg:h-12 text-[8px] border-none text-white bg-[#121212]"
+                class="btn btn-circle scale-50 lg:scale-100 border-none text-white bg-[#121212]"
                 >❮</a
               >
               <a
                 href="#slide2"
-                class="btn btn-circle w-3 lg:w-12 h-3 lg:h-12 text-[8px] border-none text-white bg-[#121212]"
+                class="btn btn-circle scale-50 lg:scale-100 border-none text-white bg-[#121212]"
                 >❯</a
               >
             </div>
           </div>
-          <div id="slide2" class="carousel-item relative lg:w-full">
+          <div id="slide2" class="carousel-item relative auto lg:w-full">
             <!-- Slide-2 -->
             <div
               class="hero lg:min-h-screen"
@@ -206,12 +206,12 @@
             >
               <a
                 href="#slide1"
-                class="btn btn-circle border-none text-white bg-[#121212]"
+                class="btn btn-circle scale-50 lg:scale-100 border-none text-white bg-[#121212]"
                 >❮</a
               >
               <a
                 href="#slide3"
-                class="btn btn-circle border-none text-white bg-[#121212]"
+                class="btn btn-circle scale-50 lg:scale-100 border-none text-white bg-[#121212]"
                 >❯</a
               >
             </div>
@@ -244,12 +244,12 @@
             >
               <a
                 href="#slide2"
-                class="btn btn-circle border-none text-white bg-[#121212]"
+                class="btn btn-circle scale-50 lg:scale-100 border-none text-white bg-[#121212]"
                 >❮</a
               >
               <a
                 href="#slide4"
-                class="btn btn-circle border-none text-white bg-[#121212]"
+                class="btn btn-circle scale-50 lg:scale-100 border-none text-white bg-[#121212]"
                 >❯</a
               >
             </div>
@@ -282,12 +282,12 @@
             >
               <a
                 href="#slide3"
-                class="btn btn-circle border-none text-white bg-[#121212]"
+                class="btn btn-circle scale-50 lg:scale-100 border-none text-white bg-[#121212]"
                 >❮</a
               >
               <a
                 href="#slide1"
-                class="btn btn-circle border-none text-white bg-[#121212]"
+                class="btn btn-circle scale-50 lg:scale-100 border-none text-white bg-[#121212]"
                 >❯</a
               >
             </div>
@@ -445,7 +445,7 @@
             </div>
           </div>
         </div>
-        <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="grid gap-6 px-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <!-- First-Fruit -->
           <div
             class="flex flex-col justify-center items-center rounded-lg border-2"
@@ -1095,7 +1095,7 @@
       <!-- Meet the team section -->
       <section class="mb-6 lg:mb-32">
         <div
-          class="hero lg:min-h-screen mx-5 rounded-lg"
+          class="hero w-[310px] lg:min-h-screen mx-5 rounded-lg"
           style="background-image: url(images/team.png)"
         >
           <div class="hero-overlay bg-opacity-60"></div>
@@ -1106,13 +1106,13 @@
               <h1 class="lg:mb-5 text-xl lg:text-5xl font-bold">
                 Meet the team section
               </h1>
-              <p class="mb-5 text-sm px-3">
+              <p class="mb-5 text-sm">
                 Contrary to popular belief, is not simply random text. It has
                 roots in a piece of classical Latin literature from 45 BC,
                 making it over 2000 years old.
               </p>
             </div>
-            <div class="lg:pt-12 flex flex-col lg:flex-row gap-6 lg:gap-24">
+            <div class="lg:pt-12 flex flex-col lg:flex-row gap-2 lg:gap-24">
               <!-- Member-1 -->
               <div class="flex flex-col justify-center items-center">
                 <div class="pb-8">
@@ -1878,7 +1878,7 @@
         </div>
       </div>
       <div
-        class="lg:w-[800px] pb-6 lg:pb-14 mx-auto grid grid-cols-4 justify-items-center px-2 lg:grid-cols-6 text-white text-sm lg:text-lg font-semibold"
+        class="lg:w-[800px] pb-6 lg:pb-14 mx-auto grid grid-cols-4 justify-items-center lg:grid-cols-6 text-white text-sm lg:text-lg font-semibold"
       >
         <a href=""><p>Home</p></a>
         <a href=""><p>About Us</p></a>
